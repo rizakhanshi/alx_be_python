@@ -1,9 +1,10 @@
 # Define variables
 principal = 1000  # Principal amount
-rate = 5          # Interest rate (in %)
+rate = 0.05          # Interest rate (in %)
 time = 3          # Time (in years)
 # Calculate simple interest
-simple_interest = (principal * rate * time) / 100   
+simple_interest = (principal * rate * time)
+   
 
 # Print the result     
 
