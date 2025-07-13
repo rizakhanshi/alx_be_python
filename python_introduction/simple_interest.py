@@ -1,11 +1,11 @@
 # Define variables
-principal = 1000  # Principal amount
-rate = 0.05          # Interest rate (in %)
-time = 3          # Time (in years)
+P = 1000  # Principal amount
+R = 0.05          # Interest rate (in %)
+T = 3          # Time (in years)
 # Calculate simple interest
-simple_interest = (principal * rate * time)
-   
+I = (P * R * T)
+
 
 # Print the result     
 
-print("The simple interest is:", simple_interest)
+print("The simple interest is:", I)
