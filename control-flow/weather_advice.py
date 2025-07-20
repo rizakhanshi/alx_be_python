@@ -5,8 +5,8 @@ def get_weather_recommendation():
     Prompts the user for current weather conditions and provides
     clothing recommendations based on the input.
     """
-    # Prompt the user for weather input
-    weather = input("What's the weather like today? (sunny/rainy/cold): ").lower()
+    # Prompt the user for weather input, ensuring the exact prompt string is used
+    weather = input("What's the weather like today? (sunny/rainy/cold):.").lower()
     # Convert input to lowercase to handle case-insensitivity (e.g., "Sunny" vs "sunny")
 
     # Provide clothing recommendations based on the user's input
@@ -23,4 +23,3 @@ def get_weather_recommendation():
 # Call the function to run the program
 if __name__ == "__main__":
     get_weather_recommendation()
-
