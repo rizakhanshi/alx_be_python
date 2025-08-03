@@ -19,7 +19,6 @@ class Book:
         return self.available
 
     def __str__(self):
-        """String representation of the book."""
         return f"{self.title} by {self.author}"
 
 
@@ -33,23 +32,20 @@ class Library:
         """Add a book to the library."""
         self.books.append(book)
 
-    def list_available_books(self):
-        """Print all available books in the library."""
-        for book in self.books:
-            if book.is_available():
-                print(book)
-
     def check_out_book(self, title):
-        """Mark a book as checked out by title."""
+        """Check out a book by title."""
         for book in self.books:
             if book.title == title and book.is_available():
                 book.check_out()
                 return
-        # You may add print("Book not available") if desired
 
     def return_book(self, title):
-        """Mark a book as returned by title."""
+        """Return a book by title."""
         for book in self.books:
             if book.title == title and not book.is_available():
                 book.return_book()
                 return
+
+    def list_available_books(self):
+        """List all available books."""
+        for b
